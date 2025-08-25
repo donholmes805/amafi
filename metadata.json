@@ -1,0 +1,8 @@
+{
+  "name": "AMA Fi",
+  "description": "AMA Fi is a dedicated Ask Me Anything (AMA) platform where Hosts run live, text-driven AMA sessions supported by embedded YouTube video or audio streams. The Stage for Questions & Conversations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

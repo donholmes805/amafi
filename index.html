@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMA Fi - The Stage for Questions & Conversations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#121212',
+              'brand-surface': '#1e1e1e',
+              'brand-primary': '#8A2BE2',
+              'brand-secondary': '#4B0082',
+              'brand-text-primary': '#E0E0E0',
+              'brand-text-secondary': '#A0A0A0',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+    /* Custom scrollbar for Webkit-based browsers (Chrome, Safari) */
+    .scrollbar-thin::-webkit-scrollbar {
+        height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+        background: #1e1e1e; /* brand-surface */
+        border-radius: 10px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: #4B0082; /* brand-secondary */
+        border-radius: 10px;
+        border: 2px solid #1e1e1e; /* brand-surface */
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background-color: #6a1b9a; /* A slightly lighter purple */
+    }
+
+    /* Custom scrollbar for Firefox */
+    .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: #4B0082 #1e1e1e; /* thumb track */
+    }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.1.1/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "next/": "https://esm.sh/next@^15.5.0/",
+    "@vercel/postgres": "https://esm.sh/@vercel/postgres@^0.10.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
